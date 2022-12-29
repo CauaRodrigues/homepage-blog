@@ -1,0 +1,65 @@
+header {
+	min-width: 90%;
+	height: max-content;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.5rem;
+
+	text-align: center;
+
+	border: 1px solid red;
+
+	span.legend {
+		font-size: min(1rem, 3vw);
+		font-weight: $font-semibold;
+		color: $color-purple;
+	}
+
+	h1 {
+		font-size: min(4rem, 10vw);
+		font-weight: $font-semibold;
+		color: $color-title;
+	}
+
+	p {
+		max-width: 60%;
+		font-size: 1.2rem;
+	}
+}
+
+form {
+	border: 1px solid green;
+	width: 35%;
+	text-align: start;
+
+	.input-btn {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	input {
+		height: 48px;
+		width: 360px;
+		padding: 8px 12px;
+
+		font-weight: $font-regular;
+		font-size: 1em;
+
+		border: 2px solid #d0d5dd;
+		border-radius: 8px;
+		outline: none;
+	}
+
+	button {
+		height: 48px;
+		width: 110px;
+		border-radius: 8px;
+		font-size: 1em;
+		font-weight: $font-medium;
+		background-color: $color-purple;
+		color: $color-light;
+	}
+}
