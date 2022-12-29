@@ -1,0 +1,70 @@
+/* Colors */
+$color-dark: #000000;
+$color-light: #ffffff;
+$color-purple: #7f56d9;
+$color-text: #667085;
+$color-title: #101828;
+$color-info: #6941c6;
+
+// Colors Labels
+$color-label-purple: #6941c6;
+$color-label-darkpurple: #3538cd;
+$color-label-blue: #026aa2;
+$color-label-darkblue: #363f72;
+$color-label-pink: #c11574;
+$color-label-darkpink: #c01048;
+$color-label-green: #027a48;
+$color-label-orange: #c4320a;
+
+// Background Labels
+$color-bg-purple: #f9f5ff;
+$color-bg-darkpurple: #eef4ff;
+$color-bg-blue: #f0f9ff;
+$color-bg-darkblue: #f8f9fc;
+$color-bg-pink: #fdf2fa;
+$color-bg-darkpink: #fff1f3;
+$color-bg-orange: #fff6ed;
+$color-bg-green: #ecfdf3;
+
+/* Breakpoints */
+
+/* Mixins */
+@mixin label-purple {
+	color: $color-label-purple;
+	background-color: $color-bg-purple;
+}
+
+@mixin label-darkpurple {
+	color: $color-label-darkpurple;
+	background-color: $color-bg-darkpurple;
+}
+
+@mixin label-blue {
+	color: $color-label-blue;
+	background-color: $color-bg-blue;
+}
+
+@mixin label-darkblue {
+	color: $color-label-darkblue;
+	background-color: $color-bg-darkblue;
+}
+
+@mixin label-pink {
+	color: $color-label-pink;
+	background-color: $color-bg-pink;
+}
+
+@mixin label-darkpink {
+	color: $color-label-darkpink;
+	background-color: $color-bg-darkpink;
+}
+
+@mixin label-orange {
+	color: $color-label-orange;
+	background-color: $color-bg-orange;
+}
+
+@mixin label-green {
+	color: $color-label-green;
+	background-color: $color-bg-green;
+}

@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: 0;
+
+	font-family: "Inter", sans-serif;
+	line-height: 1.5;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body,
+html {
+	background-color: $color-light;
+	color: $color-dark;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
