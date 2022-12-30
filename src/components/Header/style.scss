@@ -6,11 +6,9 @@ header {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	gap: 0.5rem;
+	gap: 1.5rem;
 
 	text-align: center;
-
-	border: 1px solid red;
 
 	span.legend {
 		font-size: min(1rem, 3vw);
@@ -25,24 +23,37 @@ header {
 	}
 
 	p {
-		max-width: 60%;
-		font-size: 1.2rem;
+		width: 55%;
+		font-size: min(1.5rem, 4vw);
+
+		@include for-desktop-down {
+			max-width: none;
+			width: 100%;
+		}
 	}
 }
 
 form {
-	border: 1px solid green;
-	width: 35%;
+	width: 40%;
 	text-align: start;
+
+	@include for-tablet-portrait-down {
+		width: 70%;
+	}
+
+	@include for-phone-only {
+		width: 100%;
+	}
 
 	.input-btn {
 		display: flex;
 		justify-content: space-between;
+		gap: 1rem;
 	}
 
 	input {
 		height: 48px;
-		width: 360px;
+		width: 80%;
 		padding: 8px 12px;
 
 		font-weight: $font-regular;
@@ -55,11 +66,29 @@ form {
 
 	button {
 		height: 48px;
-		width: 110px;
+		width: 100px;
+		padding: 0 10px;
 		border-radius: 8px;
-		font-size: 1em;
+		font-size: min(1rem, 3.2vw);
 		font-weight: $font-medium;
 		background-color: $color-purple;
 		color: $color-light;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	p.advice {
+		max-width: none;
+		width: 100%;
+		margin: 8px 0;
+		font-size: 0.9rem;
+		font-size: min(0.9rem, 2.5vw);
+		font-weight: $font-regular;
+
+		span {
+			text-decoration: underline;
+		}
 	}
 }

@@ -16,7 +16,7 @@ const Header = () => {
 					<button>Subscribe</button>
 				</div>
 
-				<p>
+				<p className="advice">
 					We care about your data in our <span>privacy policy</span>
 				</p>
 			</form>
