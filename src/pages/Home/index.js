@@ -17,7 +17,7 @@ const Home = () => {
 						<div className="box--lg-post">
 							<img src={Image} alt="UX review presentations" />
 
-							<div className="">
+							<div className="info-posts">
 								<span>Olivia Rhye - 20 Jan 2022</span>
 								<h3>UX review presentations</h3>
 								<p>
