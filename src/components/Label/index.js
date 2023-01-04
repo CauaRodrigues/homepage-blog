@@ -41,8 +41,6 @@ const Label = ({ tags }) => {
 		return arr;
 	};
 
-	console.log(listTags());
-
 	return (
 		<div className="labels">
 			{listTags().map(({ name, color }, id) => (

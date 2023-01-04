@@ -1,8 +1,6 @@
 import React from "react";
-import { FiArrowUpRight } from "react-icons/fi";
 import Header from "../../components/Header";
-import Image from "../../assets/images/ux-review-presentations.png";
-import Label from "../../components/Label";
+import Post from "../../components/Post";
 
 const Home = () => {
 	return (
@@ -10,28 +8,44 @@ const Home = () => {
 			<Header />
 
 			<article>
-				<section className="container-posts">
-					<h2>Recent blog posts</h2>
+				<h2>Recent blog posts</h2>
 
-					<section className="recent-posts">
-						<div className="box--lg-post">
-							<img src={Image} alt="UX review presentations" />
+				<section className="recent-posts">
+					<Post
+						size="lg"
+						img="https://imgur.com/eo3UMVl.png"
+						title="UX review presentations"
+						author="Olivia Rhye"
+						date="20 Jan 2022"
+						description="How do you create compelling presentations that wow your colleagues and impress your managers?"
+						label={["design", "research", "presentation"]}
+						iconLink
+					/>
 
-							<div className="info-posts">
-								<span>Olivia Rhye - 20 Jan 2022</span>
-								<h3>UX review presentations</h3>
-								<p>
-									How do you create compelling presentations that wow your
-									colleagues and impress your managers?
-								</p>
+					<Post
+						size="md"
+						img="https://imgur.com/OJ4U0HM.png"
+						title="Migrating to Linear 101"
+						author="Phoenix Baker"
+						date="19 Jan 2022"
+						description="Linear helps streamline software projects, sprints, tasks, and bug tracking. Here's how to get..."
+						label={["Design", "Research"]}
+						iconLink={false}
+					/>
 
-								<Label tags={["design", "research", "presentation"]} />
-							</div>
-						</div>
-					</section>
+					<Post
+						size="md"
+						img="https://imgur.com/2LfaLcX.png"
+						title="Building your API Stack"
+						author="Lana Steiner"
+						date="18 Jan 2022"
+						description="The rise of RESTful APIs has been met by a rise in tools for creating, testing, and manag..."
+						label={["Design", "Research"]}
+						iconLink={false}
+					/>
 				</section>
 
-				<section></section>
+				<section className="all-posts"></section>
 			</article>
 
 			<footer></footer>
