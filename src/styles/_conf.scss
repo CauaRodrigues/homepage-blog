@@ -41,8 +41,8 @@ $font-semibold: 600;
 		@content;
 	}
 }
-@mixin for-tablet-landscape-up {
-	@media (min-width: 900px) {
+@mixin for-tablet-landscape-dow {
+	@media (max-width: 930px) {
 		@content;
 	}
 }

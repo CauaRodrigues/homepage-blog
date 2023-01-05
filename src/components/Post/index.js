@@ -20,7 +20,7 @@ const Post = ({
 
 			<div className="info-posts">
 				<span className="author--release">
-					{author} - {release}
+					{author} • {release}
 				</span>
 
 				<div className="title--icon">

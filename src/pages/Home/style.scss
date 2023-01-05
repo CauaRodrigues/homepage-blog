@@ -19,6 +19,7 @@ article {
 	}
 
 	h2 {
+		margin-top: 1.5rem;
 		color: $color-title;
 		font-weight: $font-semibold;
 		font-size: min(1.5rem, 5vw);
@@ -34,10 +35,29 @@ section.recent-posts {
 	@include for-desktop-down {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 }
 
 section.recent-posts .post1 {
 	grid-row-start: 1;
 	grid-row-end: 3;
+}
+
+section.all-posts {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	@include for-tablet-landscape-dow {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@include for-phone-only {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
