@@ -5,27 +5,28 @@ import Label from "../Label";
 
 const Post = ({
 	size = "md",
+	item,
 	img,
 	title,
-	date,
+	release,
 	author,
 	description,
 	label,
 	iconLink,
 }) => {
 	return (
-		<div className={`box--post ${size}`}>
+		<div className={`box--post ${size} post${item}`}>
 			<img src={img} alt={title} />
 
 			<div className="info-posts">
-				<span>
-					{author} - {date}
+				<span className="author--release">
+					{author} - {release}
 				</span>
 
-				<div className="title-post--link-icon">
+				<div className="title--icon">
 					<h3>{title}</h3>
 
-					{iconLink && <FiArrowUpRight />}
+					{iconLink && <FiArrowUpRight size={24} color="#101828" />}
 				</div>
 
 				<p>{description}</p>

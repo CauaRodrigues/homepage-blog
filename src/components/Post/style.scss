@@ -1,11 +1,56 @@
 .box--post {
+	.info-posts {
+		width: 100%;
+		padding: 1rem;
+		gap: 0.5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		.author--release {
+			color: $color-info;
+			font-weight: $font-semibold;
+			font-size: small;
+		}
+
+		.title--icon {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+
+			h3 {
+				font-weight: $font-semibold;
+				font-size: min(1.5rem, 5vw);
+				color: $color-title;
+			}
+		}
+
+		p {
+			font-weight: $font-regular;
+			font-size: min(1rem, 3vw);
+		}
+	}
 }
 
-.box--post .lg {
+.box--post.lg {
+	.info-posts {
+		padding: 1rem 0;
+	}
 }
 
-.box--post .md {
+.box--post.md {
 }
 
-.box--post .sm {
+.box--post.sm {
+	img {
+		width: 45%;
+	}
+
+	.info-posts {
+		padding: 0 1rem;
+	}
+
+	display: flex;
+	width: 100%;
+	height: min-content;
 }
