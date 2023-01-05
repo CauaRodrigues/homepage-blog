@@ -1,4 +1,10 @@
 .box--post {
+	width: 100%;
+
+	img {
+		width: 100%;
+	}
+
 	.info-posts {
 		width: 100%;
 		padding: 1rem;
@@ -10,7 +16,7 @@
 		.author--release {
 			color: $color-info;
 			font-weight: $font-semibold;
-			font-size: small;
+			font-size: min(0.8rem, 4vw);
 		}
 
 		.title--icon {
@@ -27,7 +33,7 @@
 
 		p {
 			font-weight: $font-regular;
-			font-size: min(1rem, 3vw);
+			font-size: min(1rem, 3.2vw);
 		}
 	}
 }
@@ -38,15 +44,13 @@
 	}
 }
 
-.box--post.md {
-}
-
 .box--post.sm {
 	img {
 		width: 45%;
 	}
 
 	.info-posts {
+		width: 50%;
 		padding: 0 1rem;
 	}
 
