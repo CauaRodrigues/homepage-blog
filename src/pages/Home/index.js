@@ -19,13 +19,13 @@ const Home = () => {
 					<Post
 						size="lg"
 						item={1}
+						iconLink
 						img="https://imgur.com/eo3UMVl.png"
 						title="UX review presentations"
 						author="Olivia Rhye"
 						release="20 Jan 2022"
 						description="How do you create compelling presentations that wow your colleagues and impress your managers?"
 						label={["design", "research", "presentation"]}
-						iconLink
 					/>
 
 					<Post
