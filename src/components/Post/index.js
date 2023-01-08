@@ -4,7 +4,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import Label from "../Label";
 
 const Post = ({
-	size = "md",
+	size = "lg",
 	item,
 	img,
 	title,
