@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import Header from "../../components/Header";
 import Post from "../../components/Post";
+import fetchAPI from "../../service/fetchApi";
+
+const response = fetchAPI(
+	"https://my-json-server.typicode.com/CauaRodrigues/homepage-blog/db"
+);
 
 const Home = () => {
 	const isDesktopDown = useMediaQuery({
 		query: "(max-width: 1200px)",
 	});
+
+	const [listPosts, setListPosts] = useState([]);
+
+	useEffect(() => {
+		response.then(({ data, error }) => {
+			if (!error) {
+				setListPosts(data.Post);
+			}
+		});
+	}, []);
 
 	return (
 		<main>
@@ -16,6 +31,9 @@ const Home = () => {
 				<h2>Recent blog posts</h2>
 
 				<section className="recent-posts">
+					{listPosts.map((name, id) => {
+						console.log(name, id);
+					})}
 					<Post
 						size="lg"
 						item={1}

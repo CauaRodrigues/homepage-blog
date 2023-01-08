@@ -1,5 +1,5 @@
 {
-  "Post": [
+  "recentPost": [
     {
       "id": 1,
       "image": "https://imgur.com/eo3UMVl.png",
@@ -35,7 +35,9 @@
         "Design",
         "Research"
       ]
-    },
+    }
+  ],
+  "post": [
     {
       "id": 4,
       "image": "https://imgur.com/VMvVlV7.png",
